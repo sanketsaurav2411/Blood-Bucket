@@ -1,0 +1,96 @@
+{% extends 'donor/login_header.html'%}
+{% block content %}
+{% load widget_tweaks %}
+<div id="intro" class="bg-image shadow-2-strong">
+  <div class="mask d-flex align-items-center h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-7 col-md-16"><br><br>
+          <form autocomplete="off" class="bg-white rounded shadow-5-strong p-5" method="POST" enctype="multipart/form-data">
+              {% csrf_token %}
+              <div class="card-heading" >
+                  <h2 class="title" align="center">Donor Registration</h2>
+              </div>
+              <br>
+              <div class="form-row">
+                  <div class="name">First Name</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field userForm.first_name|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="name">Last Name</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field userForm.last_name|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="name">Username</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field userForm.username|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="name">Password</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field userForm.password|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="name">Blood Group</div>
+                  <div class="value">
+                      <div class="input-group">
+                          <div class="rs-select2 js-select-simple select--no-search">
+                              <select name="bloodgroup">
+                                  <option disabled="disabled" selected="selected">Choose option</option>
+                                  <option>O+</option>
+                                  <option>O-</option>
+                                  <option>A+</option>
+                                  <option>A-</option>
+                                  <option>B+</option>
+                                  <option>B-</option>
+                                  <option>AB+</option>
+                                  <option>AB-</option>
+                              </select>
+                              <div class="select-dropdown"></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="name">Address</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field donorForm.address|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+                </div>
+              <div class="form-row">
+                  <div class="name">Mobile</div>
+                  <div class="value">
+                      <div class="input-group">
+                          {% render_field donorForm.mobile|attr:'required:true'  class="input--style-5"  %}
+                      </div>
+                  </div>
+              </div><br>
+              <div class="row mb-4">
+                <div class="col d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary btn-block">Register</button>
+          </div>
+          </div>
+              <p style="text-align: center;">Already have an account ? <a style="text-decoration: none;" href="/donor/donorlogin">Click here to login</a></p>
+          </form>
+      </div>
+      </div>
+  </div>
+</div>
+</div>
+{% endblock content %}
