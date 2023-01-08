@@ -22,7 +22,6 @@ create table blood_stock (
 -- Donor
 create table donor_donor (
 	id int not null auto_increment,
-	profile_pic varchar(100),
 	bloodgroup varchar(10) not null,
 	address varchar(40) not null,
 	mobile varchar(20) not null,
