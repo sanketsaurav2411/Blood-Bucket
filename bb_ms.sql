@@ -1,6 +1,6 @@
 -- Download MySQL
 -- Run MySQL Command Line Client
--- Note run these queries one by one sequentially.
+-- Note: run these queries one by one sequentially.
 
 -- create database:
 create database bb_ms;
