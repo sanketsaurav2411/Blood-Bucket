@@ -74,6 +74,6 @@ create table donor_blooddonate (
 );
 
 /*
-By Sanket Saurav - 1CR20CS170
-S Guna Shekhar Babu - 1CR20CS173
+By Sanket Saurav
+S Guna Shekhar Babu
 */
