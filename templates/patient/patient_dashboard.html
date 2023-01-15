@@ -1,0 +1,65 @@
+{% extends 'patient/patientbase.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{%load static%}
+<br><br>
+<div class="container">
+<H4 class="text-center">MY DASHBOARD</H4>
+<br>
+<hr>
+<br>
+<div class="row justify-content-center">
+<div class="row">
+<div class="col-sm">
+<div class="card bg-light">
+   <div class="card-body">
+      <center>
+         <img src="{% static '/images/request.png' %}" style="width: 100px; height: 100px;" class="icon1">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <strong><br> Request Made <br>
+            {{requestmade}}</strong> <br>
+      </center>
+      </div>                            
+   </div>
+</div>
+<div class="col-sm">
+<div class="card bg-light">
+   <div class="card-body">
+      <center>
+         <img src="{% static '/images/pending.png' %}" style="width: 100px; height: 100px;" class="icon1">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <strong><br> Pending Request <br>
+            {{requestpending}}</strong> <br>
+      </center>
+      </div>                            
+   </div>
+</div>
+<div class="col-sm">
+   <div class="card bg-light">
+      <div class="card-body">
+         <center>
+            <img src="{% static '/images/approved.png' %}"  style="width: 100px; height: 100px;" class="icon1">
+            <div style="#333333; font-family: sans-serif; font-size: 16px">
+               <strong><br> Approved Request <br>
+               {{requestapproved}}</strong> <br>
+         </center>
+         </div>                            
+      </div>
+   </div>
+   <div class="col-sm">
+      <div class="card bg-light">
+         <div class="card-body">
+            <center>
+               <img src="{% static '/images/rejected.png' %}" style="width: 100px; height: 100px;" class="icon1">
+               <div style="#333333; font-family: sans-serif; font-size: 16px">
+                  <strong><br> Rejected Request <br>
+                  {{requestrejected}}</strong> <br>
+            </center>
+            </div>                            
+         </div>
+      </div>
+   </div>
+</div>
+<br>
+<hr>
+{% endblock content %}

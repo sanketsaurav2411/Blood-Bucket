@@ -1,0 +1,154 @@
+{%load static%}
+{% load widget_tweaks %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>Blood Bucket</title>
+      <link rel="stylesheet" href="{% static '/fonts/fonts.css' %}" />
+      <link rel="stylesheet" href="{% static '/css/style1.css' %}" />
+      <link href="{% static '/css/style2.css' %}" rel="stylesheet"/>
+   </head>
+   <body>
+      <header>
+      <style>
+         #intro {
+         background-image: url('{% static '/images/bg.jpg' %}');
+         height: 100vh;
+         }
+         @media (min-width: 992px) {
+         #intro {
+         margin-top: -58.59px;
+         }
+         }
+         .navbar {
+         background: linear-gradient(270.3deg, rgb(150, 96, 77) 0%, rgb(216, 103, 77) 50%, rgb(114, 43, 54) 95%);
+         }
+         .navbar .nav-link {
+         color: #fff !important;
+         }
+         .row{
+         padding: 5px;
+         }
+         .fa-tint{     
+         color: red;    
+         }
+         .blood{
+         float: right;
+         }
+         .fa-users{     
+         color: blue; 
+         font-size: 3ex;   
+         }
+         .fa-spinner{     
+         color: blue; 
+         font-size: 3ex;   
+         }
+         .fa-check-circle{     
+         color: blue; 
+         font-size: 3ex;   
+         }
+         .xyz{     
+         color: blue; 
+         font-size: 3ex;   
+         }
+         *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         list-style: none;
+         text-decoration: none;
+         font-family: 'Josefin Sans', sans-serif;
+         }
+         body{
+         background-color: #f3f5f9;
+         }
+         .bg-danger {
+         background-color: #ff0018!important;
+         }
+         .wrapper{
+         display: flex;
+         position: relative;
+         }
+         .wrapper .main_content{
+         width: 100%;
+         }
+         .wrapper .main_content .header{
+         padding: 20px;
+         background: #fff;
+         color: #717171;
+         border-bottom: 1px solid #e0e4e8;
+         }
+         .wrapper .main_content .info{
+         margin: 20px;
+         color: #717171;
+         line-height: 25px;
+         }
+         .wrapper .main_content .info div{
+         margin-bottom: 20px;
+         }
+         @media (max-height: 500px){
+         .social_media{
+         display: none !important;
+         }
+         }
+         .fa-sign-out-alt{
+         color: white;
+         font-size: 2ex;
+         }
+         .label {
+         color: white;
+         padding: 8px;
+         }
+         .success {background-color: #4CAF50;} /* Green */
+         .info {background-color: #2196F3;} /* Blue */
+         .warning {background-color: #ff9800;} /* Orange */
+         .danger {background-color: #f44336;} /* Red */
+         .other {background-color: #e7e7e7; color: black;} /* Gray */
+      </style>
+      </head>
+      <body>
+         <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+            <div class="container-fluid">
+               <a class="navbar-brand nav-link" target="_blank" font-color="#d9d9d9">
+               <strong>Blood Bucket</strong>
+               </a>
+               <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01"
+                  aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <i class="fas fa-bars"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarExample01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/patient/make-request" rel="nofollow">Make Request</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="/patient/my-request">Request History</a>
+                     </li>
+                  </ul>
+                  <ul class="navbar-nav d-flex flex-row">
+                  <li class="nav-item me-3 me-lg-0">
+                     <a class="nav-link" href="https://github.com/sanketsaurav2411/Blood-Bucket" rel="nofollow" target="_blank">
+                     <img src="{% static '/images/github_w.png' %}" style="width: 15px; height: 15px;" class="icon1"> </a>
+                  </li>
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" style="color: white;" href="/logout">     Logout
+                        <img src="{% static '/images/logout_arrow.png' %}" style="width: 15px; height: 15px;" class="icon1"> </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+         <div class="main_content">
+            {% block content %}
+            {% endblock content %}
+         </div>
+         </div>
+   </body>
+</html>

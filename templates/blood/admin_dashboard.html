@@ -1,0 +1,201 @@
+{% extends 'blood/adminbase.html' %}
+{% block content %}
+{% load widget_tweaks %}
+{%load static%}
+<br><br>
+<div class="container">
+<H4 class="text-center">UNITS STATUS</H4><hr><br>
+<div class="col-sm">
+<div class="row">
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type.png' %}" style="width: 75px; height: 75px;" class="icon1" alt="">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong> {{A1.unit}} </strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (2).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{B1.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (6).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{O1.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (4).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{AB1.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+<div class="card bg-light">
+   <div class="card-body">
+      <center>
+         <img src="{% static '/images/blood-drop.png' %}" href="/admin-donor" style="width: 75px; height: 75px;" class="icon1">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            Total Donors <br>
+            <strong>{{totaldonors}}</strong> <br>
+      </center>
+      </div>                            
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-body">
+         <center>
+            <img src="{% static '/images/request.png' %}" style="width: 75px; height: 75px;" class="icon1">
+            <div style="#333333; font-family: sans-serif; font-size: 16px">
+               Total Requests <br>
+               <strong>{{totalrequest}}</strong> <br>
+         </center>
+         </div>                            
+      </div>
+   </div>
+</div>
+<div class="row">
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (1).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{A2.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (3).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{B2.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (7).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{O2.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-header">
+         <center>
+            <img src="{% static '/images/blood-type (5).png' %}" style="width: 75px; height: 75px;" class="icon1">
+         </center>
+      </div>
+      <div class="card-body" style="background: rgb(255,186,186);
+         background: linear-gradient(90deg, rgba(255,186,186,1) 0%, rgba(255,234,211,1) 35%, rgba(233,251,255,1) 100%);">
+         <div style="#333333; font-family: sans-serif; font-size: 16px">
+            <center>
+               <strong>{{AB2.unit}}</strong> unit <br>
+            </center>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="col-sm-2">
+   <div class="card bg-light">
+      <div class="card-body">
+         <center>
+            <img src="{% static '/images/approved.png' %}" style="width: 75px; height: 75px;" class="icon1">
+            <div style="#333333; font-family: sans-serif; font-size: 16px">
+               Approved Requests <br>
+               <strong>{{totalapprovedrequest}}</strong> <br>
+         </center>
+         </div>                            
+      </div>
+   </div>
+   <div class="col-sm-2">
+      <div class="card bg-light">
+         <div class="card-body">
+            <center>
+               <img src="{% static '/images/blood-bag.png' %}" style="width: 75px; height: 75px;" class="icon1">
+               <div style="#333333; font-family: sans-serif; font-size: 16px"><strong>
+                  Total Blood Unit <br>
+                  {{totalbloodunit}} <br>
+                  </strong>
+            </center>
+            </div>                            
+         </div>
+      </div>
+   </div>
+</div>
+<br>
+<hr>
+{% endblock content %}

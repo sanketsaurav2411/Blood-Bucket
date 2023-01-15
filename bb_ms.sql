@@ -1,6 +1,4 @@
--- Download MySQL
--- Run MySQL Command Line Client
--- Note: run these queries one by one sequentially.
+--In this project, we have used MySQL 8.0 CLI to create database
 
 -- create database:
 create database bb_ms;
@@ -22,12 +20,13 @@ create table blood_stock (
 -- Donor
 create table donor_donor (
 	id int not null auto_increment,
+	profile_pic varchar(100),
 	bloodgroup varchar(10) not null,
 	address varchar(40) not null,
 	mobile varchar(20) not null,
 	user_id int not null unique,
 	primary key(id),
-	foreign key(user_id) references auth_user(id) on delete no action
+	foreign key(user_id) references auth_user(id) on delete cascade
 );
 
 -- Patient
@@ -40,7 +39,7 @@ create table patient_patient (
 	address varchar(40) not null,
 	mobile varchar(20) not null,
 	user_id int not null unique,
-	foreign key(user_id) references auth_user(id) on delete no action,
+	foreign key(user_id) references auth_user(id) on delete cascade,
 	primary key(id)
 );
 
@@ -57,8 +56,7 @@ create table blood_bloodrequest (
 	request_by_patient_id int,
 	date date not null,
 	primary key(id),
-	foreign key(request_by_donor_id) references donor_donor(id) on delete no action,
-	foreign key(request_by_patient_id) references patient_patient(id) on delete no action
+	foreign key(request_by_patient_id) references patient_patient(id) on delete cascade
 );
 
 -- Blood Donation
@@ -72,9 +70,10 @@ create table donor_blooddonate (
 	date date not null,
 	donor_id int not null,
 	primary key(id),
-	foreign key(donor_id) references donor_donor(id) on delete no action
+	foreign key(donor_id) references donor_donor(id) on delete cascade
 );
 
 /*
-By Sanket Saurav & Guna Shekhar
+By Sanket Saurav - 1CR20CS170
+S Guna Shekhar Babu - 1CR20CS173
 */
