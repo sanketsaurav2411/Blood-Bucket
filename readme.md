@@ -4,7 +4,6 @@
 Blood banks collect, store and provide collected blood to the patients who are in need of blood. The idea is to save time, which was done manually. It will aloow admin to operate, recover and analyze information concerned with the administrative and inventory management within a blood bank. And makes it easy for donor to donate blood, and patient to request blood.
 
 ## Features
----
 - User Databases
 - Patient, Donor Login & Sign up
 - Patient, Donor details
