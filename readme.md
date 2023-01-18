@@ -35,9 +35,9 @@ py -m pip install -r requirements. txt
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': '<your_databse_name>',
-        'USER': '<your_user_name>',
-        'PASSWORD': '<your_databse_password>',
+        'NAME': '<databse_name>',
+        'USER': '<mysql_user_name>',
+        'PASSWORD': '<mysql_user_password>',
         'HOST': 'localhost',
         'PORT': '3306'
     }
