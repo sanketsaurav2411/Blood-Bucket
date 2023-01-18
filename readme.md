@@ -1,4 +1,4 @@
-# BLOOD BUCKET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/database-MySQL-blue.svg)](https://www.python.org/downloads/) [![](https://img.shields.io/badge/framework-Django-darkgreen.svg)](https://www.djangoproject.com/download/) 
+# BLOOD BUCKET &nbsp;&nbsp;[![](https://img.shields.io/badge/database-MySQL-blue.svg)](https://www.python.org/downloads/) [![](https://img.shields.io/badge/framework-Django-darkgreen.svg)](https://www.djangoproject.com/download/) 
 
 Blood banks collect, store and provide collected blood to the patients who are in need of blood. The idea is to save time, which was done manually. It will aloow admin to operate, recover and analyze information concerned with the administrative and inventory management within a blood bank. And makes it easy for donor to donate blood, and patient to request blood.
 
