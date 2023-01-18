@@ -12,7 +12,6 @@ Blood banks collect, store and provide collected blood to the patients who are i
 - Take donation appointment easily
 - Admin Login & Sign up
 - Manage users easily
-
 ## Tools Used
 ---
 - MySQL Databases
