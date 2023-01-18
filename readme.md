@@ -1,6 +1,5 @@
 # BLOOD BUCKET &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[![](https://img.shields.io/badge/database-MySQL-blue.svg)](https://www.python.org/downloads/) [![](https://img.shields.io/badge/framework-Django-darkgreen.svg)](https://www.djangoproject.com/download/) 
 
------
 Blood banks collect, store and provide collected blood to the patients who are in need of blood. The idea is to save time, which was done manually. It will aloow admin to operate, recover and analyze information concerned with the administrative and inventory management within a blood bank. And makes it easy for donor to donate blood, and patient to request blood.
 
 ## Features
@@ -11,14 +10,14 @@ Blood banks collect, store and provide collected blood to the patients who are i
 - Take donation appointment easily
 - Admin Login & Sign up
 - Manage users easily
+
 ## Tools Used
----
 - MySQL Databases
 - Django framework
 - VSCode
 
 ## How to run this project
----
+
 ### Setup database
 - Install [MySQL](https://dev.mysql.com/downloads/installer/)
 - Now, run MySQL cmd line client.
@@ -62,7 +61,7 @@ py manage.py runserver
 ```sh
 http://127.0.0.1:8000/
 ```
----
+
 # Collaborators
   | |  |  |
   | ------------- | ------------- | ------------- |
