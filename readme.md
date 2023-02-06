@@ -61,9 +61,3 @@ py manage.py runserver
 ```sh
 http://127.0.0.1:8000/
 ```
-
-# Collaborators
-  | |  |  |
-  | ------------- | ------------- | ------------- |
-  | **Sanket Saurav** |[GitHub](https://github.com/sanketsaurav2411) | [LinkedIn](https://www.linkedin.com/in/sanket-saurav-19621a17a/) | 
-  | **Guna Sekhar** | [Github](https://github.com/GunaSekar02) | [LinkedIn](https://www.linkedin.com/in/s-guna-sekhar-babu-b910271bb)
